@@ -28,6 +28,10 @@ class MainActivity : AppCompatActivity() {
         mAdapter = MainViewPagerAdapter(supportFragmentManager)
         mainViewPager.adapter = mAdapter
 
+//        재사용 성을 일부로 무시하도록 하는 코드 예시 (사용성 개선 인 경우도 있다.)
+//        한번에 5개를 가지고 있다.
+        mainViewPager.offscreenPageLimit = 5
+
     }
 
 }
