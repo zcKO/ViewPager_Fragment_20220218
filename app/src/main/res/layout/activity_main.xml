@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- xmlns : app -> 라이브러리 관련 속성 할 때 사용 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,7 +10,10 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/mainTabLayout"
+        app:tabIndicatorColor="@color/black"
+        app:tabSelectedTextColor="@color/black"
         android:layout_width="match_parent"
+        app:tabMode="scrollable"
         android:layout_height="wrap_content" />
 
     <androidx.viewpager.widget.ViewPager
