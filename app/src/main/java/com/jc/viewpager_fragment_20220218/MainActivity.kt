@@ -32,6 +32,9 @@ class MainActivity : AppCompatActivity() {
 //        한번에 5개를 가지고 있다.
         mainViewPager.offscreenPageLimit = 5
 
+//        텝 라이아웃 / 뷰페이저 연결
+        mainTabLayout.setupWithViewPager(mainViewPager)
+
     }
 
 }
