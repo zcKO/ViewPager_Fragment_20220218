@@ -9,6 +9,18 @@ class MainViewPagerAdapter(
     fm: FragmentManager
 ) : FragmentPagerAdapter(fm) {
 
+    // CharSequence -> String 이랑 비슷하게 생각하면 된다.
+    override fun getPageTitle(position: Int): CharSequence? {
+        return when (position) {
+            0 -> "이름"
+            1 -> "출생년도"
+            2 -> "인사말"
+            3 -> "기타 1"
+            else -> "기타 2"
+        }
+    }
+
+
     override fun getCount(): Int = 5
 
     override fun getItem(position: Int): Fragment {
@@ -22,4 +34,5 @@ class MainViewPagerAdapter(
         }
 
     }
+
 }
