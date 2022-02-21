@@ -10,17 +10,17 @@ class MainViewPagerAdapter(
 ) : FragmentPagerAdapter(fm) {
 
     override fun getCount(): Int {
-        return 3
+        return 5
     }
 
     override fun getItem(position: Int): Fragment {
 
-        when (position) {
-            0 -> { return NameFragment() }
-            1 -> return BirthFragment()
-            2 -> return HelloFragment()
-            3 -> return Etc1Fragment()
-            else -> return Etc2Fragment()
+        return when (position) {
+            0 -> NameFragment()
+            1 -> BirthFragment()
+            2 -> HelloFragment()
+            3 -> Etc1Fragment()
+            else -> Etc2Fragment()
         }
 
     }
