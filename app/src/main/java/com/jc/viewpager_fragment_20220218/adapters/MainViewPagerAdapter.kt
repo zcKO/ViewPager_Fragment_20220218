@@ -9,9 +9,7 @@ class MainViewPagerAdapter(
     fm: FragmentManager
 ) : FragmentPagerAdapter(fm) {
 
-    override fun getCount(): Int {
-        return 5
-    }
+    override fun getCount(): Int = 5
 
     override fun getItem(position: Int): Fragment {
 
